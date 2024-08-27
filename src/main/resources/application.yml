@@ -1,0 +1,21 @@
+quarkus:
+  smallrye-graphql:
+    federation:
+      enabled: true
+    tracing:
+      enabled: true
+    metrics:
+      enabled: true
+  log:
+    level: INFO
+    console:
+      google: false
+    category:
+      "org.jboss.resteasy.reactive.client.logging":
+        level: WARN
+  shutdown:
+    timeout: 5
+  analytics:
+    disabled: true
+  application:
+    name: search-resolver

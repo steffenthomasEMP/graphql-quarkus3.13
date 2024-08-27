@@ -1,0 +1,14 @@
+#needed for jvm build
+!target/*-runner
+!target/*-runner.jar
+!target/lib/*
+!target/quarkus-app/*
+#needed for native build
+#.gitlab-ci
+#target
+#Dockerfile
+#README.md
+#renovate.json
+#.releaserc.json
+#.gitlab-ci.yml
+#.gitignore
