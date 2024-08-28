@@ -5,7 +5,7 @@ import org.eclipse.microprofile.graphql.NonNull;
 
 public interface QueryResult {
 
-  @NonNull
+  //@NonNull
   @Description("Diagnostics of the search result.")
   Diagnostics getDiagnostics();
 
