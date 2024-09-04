@@ -5,6 +5,7 @@ import io.smallrye.graphql.api.federation.Key;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.eclipse.microprofile.graphql.Id;
 import org.eclipse.microprofile.graphql.NonNull;
@@ -19,10 +20,10 @@ public class LandingPageResult implements CategoryQueryResult, ResultBase {
   // SearchResultBase fields
 
   @Id
-  @NonNull
+  @Getter(onMethod_={@NonNull})
   private String id;
 
-  @NonNull
+  @Getter(onMethod_={@NonNull})
   private Diagnostics diagnostics;
 
 
